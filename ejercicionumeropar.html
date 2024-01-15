@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        var datoEntrada;
+        datoEntrada = window.prompt ("Dime un número entero, por favor");
+        /*if ((datoEntrada %2)==0){
+
+            document.writeln("Es un número par");
+        }else {
+            document.writeln("no es un número par")
+        }
+        */
+        function esPar (numero){
+            return numero%2 ==0;
+        }
+        if(!isNaN(datoEntrada)==true)
+        {if(esPar(datoEntrada)){document.writeln("es un número par")}
+        else{document.writeln("no es un número par")}
+        }
+
+        else{document.writeln("no es un número")}
+
+
+
+        
+
+        
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

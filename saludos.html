@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        var nombre;
+        var fecha = new Date();
+        var hora = fecha.getHours();
+        var minutos = fecha.getMinutes();
+
+        /*nombre = window.prompt ("Introduzca su nombre");
+        if (hora <12)
+        document.writeln ("Buenos días "+ nombre);
+        if (hora >=12)
+        document.writeln ("Buenas tardes "+ nombre);
+        if (hora >=20)
+        document.writeln ("Buenas noches " + nombre);
+
+        document.writeln( " son las: "+hora+":"+minutos+" horas,"+" bienvenido")*/
+
+
+
+        /*nombre = window.prompt ("Introduzca su nombre");
+        if (hora <12) document.writeln("Buenos días "+ nombre);
+        else if (hora >=12 && hora <20) document.writeln ("Buenas tardes " + nombre);
+        else document.writeln ("Buenas noches " + nombre);
+        document.writeln("<br>");
+        document.writeln(nombre+ ", son las "+hora+":"+minutos+" horas"+" bienvenido a mi página web, siéntete como en casa.")*/
+
+
+        /*nombre = window.prompt("Introduzca su nombre");
+        switch (hora) {
+            case 12:
+                alert(nombe + " es mediodía");
+                break;
+            case 19:
+                alert(nombre + " es por la tarde");
+                break;
+            default: alert(nombre + " es por la noche")
+        }*/
+
+        nombre = window.prompt("Introduzca su nombre");
+        switch (true) {
+            case (hora <12):
+                saludo = "Buenos días "+nombre;
+                break;
+            case (hora >= 12 && hora <20):
+                saludo = "Buenas tardes "+ nombre;
+                break;
+            case (hora >= 20):
+                saludo = "Buenas noches " + nombre;
+                break;
+                default:
+                    saludo= "Hola "+ nombre;}
+                    saludo += "Son las "+ hora +":"+(minutos < 10 ? "0" :"") + minutos;
+                    document.writeln (saludo);
+        
+
+
+
+
+
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

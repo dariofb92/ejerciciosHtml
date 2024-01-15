@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica javascript</title>
+    <script type="text/javascript">
+        document.writeln("<h1>Practicando Javascript</h1>");
+        var palabra = "";
+        var numero;
+        var multiplicador = 1;
+        var resultado;
+        
+
+        palabra = window.prompt("introduzca la palabra Ok");
+
+        if (palabra == "ok") {
+            numero = window.prompt("introduce un número entero");
+            if (!isNaN(numero)) {
+                while (multiplicador <= 10) {
+                    resultado = multiplicador * numero;
+                    document.writeln(numero + "x" + multiplicador + "=" + resultado);
+                    document.writeln("<br>");
+                    multiplicador = multiplicador + 1;
+                }
+            } else {
+                document.writeln("por favor recargue la página e introduzca ok");
+            }
+        } else {
+            document.writeln("por favor recargue la página");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
